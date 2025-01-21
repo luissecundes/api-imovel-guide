@@ -24,7 +24,7 @@ class StoreRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'cpf' => 'required|max:11|unique:users',
+            'cpf' => 'required|max:11',
             'creci' => 'required|string|min:2',
         ];
     }
